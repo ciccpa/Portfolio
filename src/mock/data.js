@@ -11,7 +11,7 @@ export const headData = {
 export const heroData = {
   title: 'Hello, my name is',
   name: 'Peter,',
-  subtitle: 'A recent greread software developer.',
+  subtitle: 'A recent grad software developer.',
   cta: 'Read more',
 };
 
@@ -21,7 +21,7 @@ export const aboutData = {
   paragraphOne:
     'I am a recent graduate of Farmingdale State College (SUNY) with a Bachelor of Science degree in Computer Programming and Information Systems.',
   paragraphTwo:
-    "I've been programming since 2015, with lots of exposure to software and web development. I've worked with languages such as Java, C++, C#, HTML & JavaScript, PHP, with recently used technologies such as Node and React.js.",
+    "I've been programming since 2015, with lots of exposure to software and web development. I've worked extensively with languages such as Java, C++, C#, HTML & JavaScript, PHP, along with technologies such as Node and React.js.",
   paragraphThree:
     'Links to my Github and LinkedIn profiles can be found at the very bottom of this page. Thank you for the visit, and I look forward to hearing from you!',
   resume: 'https://drive.google.com/file/d/1afbdi2-TTlREv6agfFUM3QbIC5BcZPJM/view', // if no resume, the button will not show up
