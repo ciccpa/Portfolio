@@ -24,7 +24,7 @@ export const aboutData = {
     "I've been programming since 2015, with lots of exposure to software and web development. I've worked extensively with languages such as Java, C++, C#, HTML & JavaScript, PHP, along with technologies such as Node and React.js.",
   paragraphThree:
     'Links to my Github and LinkedIn profiles can be found at the very bottom of this page. Thank you for the visit, and I look forward to hearing from you!',
-  resume: 'https://drive.google.com/file/d/1v_BcJ2d8S1bs0igK1gIukft9DlralD83/view', // if no resume, the button will not show up
+  resume: 'https://drive.google.com/file/d/1fF_6gkSdemdN5YIZ_Lr17rPFRJtPJn9I/view', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
