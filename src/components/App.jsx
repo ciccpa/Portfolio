@@ -10,7 +10,7 @@ import { PortfolioProvider } from '../context/context';
 import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
 
 function App() { 
-  const [darkMode, setDarkMode] = React.useState(darkMode);
+  const [darkMode, setDarkMode] = React.useState(false);
  
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
