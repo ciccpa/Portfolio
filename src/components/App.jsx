@@ -14,9 +14,7 @@ function App() {
   React.useEffect(() => {
     if(localStorage) {
       localStorage.setItem("dark", JSON.stringify(darkMode)); 
-    } else {
-      return true 
-    }
+    } 
     
   }, [darkMode]); 
 
