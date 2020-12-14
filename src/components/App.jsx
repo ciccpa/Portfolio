@@ -10,42 +10,13 @@ import { PortfolioProvider } from '../context/context';
 import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
 
 function App() { 
-  const [darkMode, setDarkMode] = React.useState(getInitialMode());
-  React.useEffect(() => {
-    if(localStorage) {
-      localStorage.setItem("dark", JSON.stringify(darkMode)); 
-    } 
-    
-  }, [darkMode]); 
-
+  const [darkMode, setDarkMode] = React.useState(darkMode);
+ 
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [projects, setProjects] = useState([]);
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
-
- 
-  function getInitialMode()
-  {
-    if(localStorage)
-    {
-      const isReturningUser = "dark" in localStorage;
-    const savedMode = JSON.parse(localStorage.getItem('dark'));
-    
-    if(isReturningUser) 
-    {
-      return savedMode;
-    } else if (userPrefersDark)
-    {
-      return true;
-    } else {
-      return false;
-    }
-    }
-  
-    return savedMode || false;
-  }
-
  
   useEffect(() => {
     setHero({ ...heroData });
