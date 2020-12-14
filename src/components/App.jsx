@@ -12,7 +12,7 @@ import { heroData, aboutData, projectsData, contactData, footerData } from '../m
 function App() { 
   const [darkMode, setDarkMode] = React.useState(getInitialMode());
   React.useEffect(() => {
-    if(window) {
+    if(localStorage) {
       localStorage.setItem("dark", JSON.stringify(darkMode)); 
     } else {
       return true 
@@ -29,7 +29,9 @@ function App() {
  
   function getInitialMode()
   {
-    const isReturningUser = "dark" in localStorage;
+    if(localStorage)
+    {
+      const isReturningUser = "dark" in localStorage;
     const savedMode = JSON.parse(localStorage.getItem('dark'));
     
     if(isReturningUser) 
@@ -41,7 +43,8 @@ function App() {
     } else {
       return false;
     }
-
+    }
+  
     return savedMode || false;
   }
 
