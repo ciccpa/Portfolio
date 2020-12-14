@@ -26,7 +26,6 @@ function App() {
   {
     const isReturningUser = "dark" in localStorage;
     const savedMode = JSON.parse(localStorage.getItem('dark'));
-    const userPrefersDark = getPrefColorScheme();
     
     if(isReturningUser) 
     {
@@ -41,13 +40,7 @@ function App() {
     return savedMode || false;
   }
 
-  function getPrefColorScheme()
-  {
-    if (!window.matchMedia) return;
-
-    return window.matchMedia("(prefers-color-scheme: dark)").matches;
-  }
-
+ 
   useEffect(() => {
     setHero({ ...heroData });
     setAbout({ ...aboutData });
