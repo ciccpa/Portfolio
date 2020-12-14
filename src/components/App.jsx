@@ -12,7 +12,12 @@ import { heroData, aboutData, projectsData, contactData, footerData } from '../m
 function App() { 
   const [darkMode, setDarkMode] = React.useState(getInitialMode());
   React.useEffect(() => {
-    localStorage.setItem("dark", JSON.stringify(darkMode)); 
+    if(window) {
+      localStorage.setItem("dark", JSON.stringify(darkMode)); 
+    } else {
+      return true 
+    }
+    
   }, [darkMode]); 
 
   const [hero, setHero] = useState({});
@@ -21,7 +26,7 @@ function App() {
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
 
-  
+ 
   function getInitialMode()
   {
     const isReturningUser = "dark" in localStorage;
