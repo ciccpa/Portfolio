@@ -10,8 +10,7 @@ $secondary-color:#4A00E0;
 .light-mode 
 {
     background-color: #fff;
-    @if(background-color: #1a1919)
-    {
+  
       
         #hero {
             transition: 0.25s ease-out;
@@ -160,13 +159,11 @@ $secondary-color:#4A00E0;
           
           transition: 0.25s ease-out;
     }
-}
 
 .dark-mode 
 {
     background-color: #1a1919;
-    @if(background-color: #1a1919)
-    {
+  
         #hero {
             transition: 0.25s ease-out;
             min-height: 100vh;
@@ -316,7 +313,7 @@ $secondary-color:#4A00E0;
 
           transition: 0.25s ease-out;
     }
-}
+
 
 
 
