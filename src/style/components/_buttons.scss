@@ -131,7 +131,6 @@ input[type="checkbox"].checkbox + label {
 .toggle-container {
   display: flex;
   margin: 0 auto;
-  float:right;
 }
 
 .toggle-container > span {
@@ -147,3 +146,4 @@ input[type="checkbox"].checkbox + label {
 .toggle-container > span:last-child {
   margin-top: 5px;
 }
+
